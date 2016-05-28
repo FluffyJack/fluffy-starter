@@ -1,0 +1,7 @@
+--bail
+--colors
+--reporter spec
+--require ./test/support/unit-setup.js
+--slow 50
+--timeout 200
+--ui bdd

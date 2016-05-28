@@ -1,0 +1,31 @@
+{
+  "name": "fluffy-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/index.js",
+  "scripts": {
+    "test:lint": "eslint --config ./test/support/eslint.json --color src/**/*.js test/**/*.js",
+    "test:unit": "mocha --opts test/support/unit.opts test/unit/**/*-test.js",
+    "test:integration": "mocha --opts test/support/integration.opts test/integration/**/*-test.js",
+    "test:functional": "mocha --opts test/support/functional.opts test/functional/**/*-test.js",
+    "test": "npm run test:lint && npm run test:unit && npm run test:integration && npm run test:functional"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/FluffyJack/fluffy-starter.git"
+  },
+  "author": "Jack Watson-Hamblin <info@fluffyjack.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FluffyJack/fluffy-starter/issues"
+  },
+  "homepage": "https://github.com/FluffyJack/fluffy-starter#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-config-prismatik": "git@github.com:Prismatik/eslint-config-prismatik.git",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3"
+  }
+}

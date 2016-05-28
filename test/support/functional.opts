@@ -1,0 +1,4 @@
+--colors
+--reporter spec
+--require ./test/support/integration-setup.js
+--ui bdd
